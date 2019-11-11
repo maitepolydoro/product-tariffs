@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "name": "Basic electricity tariff",
+      "tarrifs": [
+        {
+          "consumption": 3500,
+          "annualCost": 830
+        },
+        {
+          "consumption": 4500,
+          "annualCost": 1050
+        },
+        {
+          "consumption": 6000,
+          "annualCost": 1380
+        }
+      ]
+    },
+    {
+      "name": "Packaged tariff",
+      "tarrifs": [
+        {
+          "consumption": 3500,
+          "annualCost": 800
+        },
+        {
+          "consumption": 4500,
+          "annualCost": 950
+        },
+        {
+          "consumption": 6000,
+          "annualCost": 1400
+        }
+      ]
+    }
+  ]
+}

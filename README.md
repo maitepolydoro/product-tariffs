@@ -1,6 +1,13 @@
-# FrontApp
+## Products Verivox
+This front-end project was developed on Angular 8. You can acess by web or mobile using the view from mobile app in your browser.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+- LINT 
+- KARMA/ JASMINE UNIT TESTS WITH COVERAGE
+
+## RUN JSON-SERVER
+You will need to run the REST API with command `json-server data.json`. 
+Navigate to `http://localhost:3000/`.
 
 ## Development server
 

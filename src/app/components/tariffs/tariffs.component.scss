@@ -1,0 +1,71 @@
+.flex {
+	display: flex;
+}
+.flex-1 {
+	flex: 1;
+}
+
+.multiSelect {
+	width: 100%;
+}
+.filter-container {
+	text-align: center;
+}
+.card {
+	text-align: center;
+	display: block;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em;
+	border: 1px solid #d9dad9;
+}
+.card > div {
+	display: flex;
+	align-items: center;
+}
+.card > div img {
+	margin-right: 14px;
+}
+
+.img-prod {
+	text-align: center;
+    padding: 1em;
+}
+
+.card {
+	padding: 0 1em 1em 1em;
+	border-bottom: 1px solid #d9dad9;
+	margin: 1em;
+}
+.ui-panel-content {
+	padding: 1em;
+}
+.dark-theme :host ::ng-deep .card,
+.dark-theme :host ::ng-deep .card {
+	border-bottom: 1px solid #191919;
+}
+
+@media (max-width: 1024px) {
+	.card img {
+		 width: 75px;
+	}
+	.filter-container {
+		text-align: left;
+	}
+}
+
+.price {
+	padding: 1em !important; 
+	font-size: 1.5em; 		
+} 
+
+
+.labelYear {
+	font-size: 0.5em;
+}
+
+.btnCustom {
+	border: 1px solid #FD8A02;
+	background-color: #FD8A02;
+}
+

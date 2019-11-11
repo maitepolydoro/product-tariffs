@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.page-content {
+ padding: 1em;
+ background-color: white;
+}
+
+.mat-toolbar.mat-primary {
+    background: #FD8A02;
+}
+body .ui-carousel .ui-carousel-dots-container .ui-carousel-dot-item.ui-state-highlight .ui-carousel-dot-icon {
+    background-color: #FD8A02 !important;
+}
+body .ui-button:enabled:hover {
+    border: 1px solid #5B5B5B !important;
+	background-color: #5B5B5B !important;
+}

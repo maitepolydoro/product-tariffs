@@ -1,0 +1,35 @@
+<div class="p-grid">
+    <div class="p-col-12 p-md-6">
+        <p-multiSelect class="multiSelect" [options]="tariffs" defaultLabel="Choose the consumption (kWh)" optionLabel="consumption"
+            [filter]="false" [(ngModel)]="selectedOptions" (onChange)="getProducts()"></p-multiSelect>
+    </div>
+    <div class="p-col-12 p-md-6">
+        <p-dropdown [options]="sortOptions" [(ngModel)]="selectedSort" placeholder="Sort by Cost" (onChange)="sortProducts($event)"></p-dropdown>    
+    </div>
+</div>
+
+<p-carousel [value]="listProducts" [numVisible]="5" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
+    <p-header>
+        <h3>Products</h3>
+    </p-header>
+    <ng-template let-product pTemplate="item">
+            <div class="card">
+                <div class="p-grid p-nogutter">
+                    <div class="p-col-12 img-prod">
+                        <img src="assets/vv.jpg" />
+                    </div>
+                    <div class="p-col-12">
+                        <span><b>{{product.name}}</b></span>
+                    </div>
+                    <div class="p-col-12">
+                        <span>{{product.consumption}} (kWh/year)</span>
+                    </div>
+                    <div class="p-col-12 price">
+                        <span><b>{{product.annualCost | currency:'EUR' }}</b></span>
+                        <span class="labelYear">/year</span>
+                    </div>
+                </div>                
+                <button pButton type="button" label="Info" class="ui-button-rounded btnCustom" label="Add to Cart" icon="pi pi-shopping-cart" (click)="addToCart()"></button>
+            </div>
+    </ng-template>
+</p-carousel>
